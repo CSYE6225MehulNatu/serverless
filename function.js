@@ -22,7 +22,7 @@ functions.cloudEvent("myCloudEventFunction", cloudEvent => {
     //const expirationTime = new Date(Date.now() + 2 * 60000);
     const uniqueCode = generateRandomValue(email);
 
-    const verificationLink = `http://${domain}:${port}/v1/user/verify?code=${uniqueCode}`; 
+    const verificationLink = `https://${domain}/v1/user/verify?code=${uniqueCode}`; 
 
     const form = new FormData();
 
